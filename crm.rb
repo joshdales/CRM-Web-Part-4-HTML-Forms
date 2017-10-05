@@ -33,6 +33,16 @@ get '/contacts/:id/edit' do
   erb :edit_contact
 end
 
+get '/contacts/:id/delete' do
+  @contact = Contact.find_by(id: params[:id].to_i)
+  if @contact
+    erb :delete_contact
+  else
+    raise Sinatra::NotFound
+  end
+  erb :delete_contact
+end
+
 post '/contacts' do
   Contact.create(
     first_name: params[:first_name],
