@@ -8,7 +8,7 @@
 
 <article class="contact">
 <p><%= contact.full_name %> (<%= contact.email %>)</p>
-<aside><a href="#">Edit</a> | <a href="#">Delete</a></aside>
+<aside><a href="/contacts/<%= contact.id %>/edit">Edit</a> | <a href="#">Delete</a></aside>
 </article>
 
 <% end %>
