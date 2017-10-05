@@ -1,6 +1,8 @@
-<h1>Are you sure you eant to delete this contact?</h1>
+<h1>Are you sure you want to delete this contact?</h1>
 
+<div>
 <form action="/contacts/<%= @contact.id %>" method="post">
   <input type='hidden' name="_method" value="delete">
-  <input type="submit" value="Delete Contact">
+  <input type="submit" value="Delete Contact" class="delete_button">
 </form>
+</div>

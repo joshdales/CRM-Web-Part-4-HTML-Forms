@@ -56,13 +56,18 @@ footer {
   font-weight: bold;
 }
 
-.contact {
+.whole_contact {
+  text-decoration: none;
+  display: block;
+}
+
+.whole_contact .contact {
   background: rgb(0,	225,	210);
   padding-left: 1rem;
   margin: 1rem;
 }
 
-.contact > p {
+.whole_contact .contact > p {
   font-size: 1.5em;
   padding-top: 1rem;
   margin-bottom: 0;
@@ -98,4 +103,16 @@ footer {
 
 .notes {
   font-size: 1.2em;
+}
+
+/* DELETE */
+
+div {
+  text-align: center;
+  line-height: 10;
+}
+
+input.delete_button {
+
+  font-size: 2em;
 }

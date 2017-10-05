@@ -1,5 +1,6 @@
 require_relative "contact"
 require "sinatra"
+require "pry"
 
 get '/' do
   erb :index
@@ -7,7 +8,18 @@ end
 
 get '/contacts' do
   @contacts = Contact.all
-  erb :contacts
+  # binding.pry
+  if params["search"]
+    if @contact = Contact.find_by(first_name: params["search"])
+      erb :show_contact
+    elsif @contact = Contact.find_by(last_name: params["search"])
+      erb :show_contact
+    elsif @contact = Contact.find_by(email: params["search"])
+      erb :show_contact
+    end
+  else
+    erb :contacts
+  end
 end
 
 get '/contacts/new' do
