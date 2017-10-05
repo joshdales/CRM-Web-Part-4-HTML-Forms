@@ -3,15 +3,15 @@
 </article>
 
 <% @contacts.each do |contact| %>
-  <a href="/contacts/<%= contact.id %>" class="whole_contact">
-    <article class="contact">
-      <p><%= contact.full_name %> (<%= contact.email %>)</p>
-      <aside>
-        <a href="/contacts/<%= contact.id %>/edit">Edit</a>
-        |
-        <a href="/contacts/<%= contact.id %>/delete">Delete</a>
-      </aside>
-    </article>
-  </a>
+
+  <div class="contact">
+    <a href="/contacts/<%= contact.id %>" class="contacta"><%= contact.full_name %> (<%= contact.email %>)</a>
+    <div>
+      <a href="/contacts/<%= contact.id %>/edit">Edit</a>
+      |
+      <a href="/contacts/<%= contact.id %>/delete">Delete</a>
+    </div>
+  </div>
+
 
 <% end %>

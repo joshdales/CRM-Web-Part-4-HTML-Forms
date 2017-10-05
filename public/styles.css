@@ -15,7 +15,7 @@ header > h1 {
 }
 
 nav > ul {
-  font-size: 1.5em;
+  font-size: 2em;
   list-style: none;
   background: rgb(211,211,211);
   text-align: center;
@@ -28,8 +28,14 @@ nav li {
 }
 
 nav a {
+  display: block;
+  font-weight: bold;
   text-decoration: none;
   color: white;
+}
+
+nav a:hover {
+  color: black;
 }
 
 /* FOOTER */
@@ -45,7 +51,7 @@ footer {
 /* CONTACTS */
 .number_of_contacts {
   background: rgb(255,	125,	116);
-  font-size: 1.5em;
+  font-size: 2em;
   padding-left: 1rem;
   margin: 1rem;
   line-height: 2;
@@ -56,28 +62,33 @@ footer {
   font-weight: bold;
 }
 
-.whole_contact {
-  text-decoration: none;
+a.contacta {
   display: block;
+  text-decoration: none;
 }
 
-.whole_contact .contact {
+.contact {
   background: rgb(0,	225,	210);
   padding-left: 1rem;
   margin: 1rem;
 }
 
-.whole_contact .contact > p {
-  font-size: 1.5em;
+.contact > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8em;
   padding-top: 1rem;
   margin-bottom: 0;
   font-weight: bold;
 }
 
-.contact aside {
-  padding-bottom: 0.5rem;
+.contact > a:hover {
+  color: white;
 }
 
+.contact div {
+  padding-bottom: 0.5rem;
+}
 
 /* SHOW CONTACT */
 
@@ -102,17 +113,5 @@ footer {
 }
 
 .notes {
-  font-size: 1.2em;
-}
-
-/* DELETE */
-
-div {
-  text-align: center;
-  line-height: 10;
-}
-
-input.delete_button {
-
-  font-size: 2em;
+  font-size: 1.5em;
 }
