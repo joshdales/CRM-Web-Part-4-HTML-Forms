@@ -1,0 +1,14 @@
+
+
+<article class="number_of_contacts">
+  <p >There are <span><%= @contacts.count %></span> contacts. </p>
+</article>
+
+<% @contacts.each do |contact| %>
+
+<article class="contact">
+<p><%= contact.full_name %> (<%= contact.email %>)</p>
+<aside><a href="#">Edit</a> | <a href="#">Delete</a></aside>
+</article>
+
+<% end %>
