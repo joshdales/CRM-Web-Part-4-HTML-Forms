@@ -19,6 +19,10 @@ get '/contacts/:id' do
   end
 end
 
+get '/new' do
+  erb :new
+end
+
 get '/about' do
   erb :about
 end
