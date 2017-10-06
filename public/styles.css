@@ -63,6 +63,7 @@ footer {
   padding-left: 1rem;
   margin: 1rem;
   line-height: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .number_of_contacts span {
@@ -79,6 +80,8 @@ a.contacta {
   background: rgb(0,	225,	210);
   padding-left: 1rem;
   margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .contact > a {
@@ -110,6 +113,8 @@ a.contacta {
   line-height: 2;
   background: rgb(0,	225,	210);
   margin: 0rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .email {
@@ -118,6 +123,8 @@ a.contacta {
   font-size: 1.4em;
   padding-left: 2rem;
   margin-top: 0rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .notes {
