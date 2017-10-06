@@ -5,6 +5,7 @@
   <input type="text" name="first_name" value="<%= @contact.first_name %>">
   <input type="text" name="last_name" value="<%= @contact.last_name %>">
   <input type="email" name="email" value="<%= @contact.email %>">
-  <input type="note" name="note" value="<%= @contact.note %>">
   <input type="submit" value="Edit Contact">
 </form>
+
+<textarea name="note" value="<%= @contact.note %>" placeholder="Notes"></textarea>
