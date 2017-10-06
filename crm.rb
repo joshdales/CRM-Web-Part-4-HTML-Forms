@@ -65,6 +65,10 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
+put '/search' do
+  erb :search
+end
+
 put '/contacts/:id' do
   @contact = Contact.find_by(id: params[:id].to_i)
   if @contact
