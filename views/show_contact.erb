@@ -2,6 +2,8 @@
 <p class="show_contact email"><%= @contact.email %></p>
 <p class="show_contact notes"><%= @contact.note %></p>
 
+<div class="buttons">
 <a href="/contacts/<%= @contact.id %>/edit"><button>Edit Contact</button></a>
 
 <a href="/contacts/<%= @contact.id %>/delete"><button>Delete Contact</button></a>
+</div>

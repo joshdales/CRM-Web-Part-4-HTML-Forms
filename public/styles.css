@@ -45,6 +45,11 @@ nav a:hover {
   color: black;
 }
 
+/* MAIN */
+main {
+  margin: 2rem;
+}
+
 /* FOOTER */
 footer {
   font-size: 1.2em;
@@ -52,16 +57,31 @@ footer {
   background: black;
   text-align: center;
   line-height: 4;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
+/* INDEX */
+
+.welcome {
+  font-size: 2em;
+}
+
+.welcome_contact h2,
+.welcome_search h2 {
+  font-size: 1.8em;
+}
+
+.welcome_contact p {
+  font-size: 1.3em;
+}
 
 /* CONTACTS */
 .number_of_contacts {
   background: rgb(255,	125,	116);
   font-size: 2em;
   padding-left: 1rem;
-  margin: 1rem;
+  margin: 0 1rem;
   line-height: 2;
   box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
 }
@@ -131,4 +151,9 @@ a.contacta {
 
 .notes {
   font-size: 1.5em;
+}
+
+.buttons {
+  margin: 0 1rem;
+  text-align: right;
 }
