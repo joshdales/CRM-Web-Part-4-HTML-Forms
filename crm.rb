@@ -65,7 +65,7 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
-put '/search' do
+get '/search' do
   erb :search
 end
 
